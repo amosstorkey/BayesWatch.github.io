@@ -1,0 +1,10 @@
+<ul>
+{% for member in site.data.members %}
+  <li>
+    <a href="{{ member.homepage }}">
+      {{ member.name }}
+    </a>
+    <small> {{ member.role }} </small>
+  </li>
+{% endfor %}
+</ul>
