@@ -1,0 +1,23 @@
+---
+layout: default
+title: Publications
+---
+
+<div class="publications">
+    <h1 class="page-tile">Publications and pre-prints</h1>
+    <ul>
+    {% assign sorted_pubs = site.data.publications | sort: "month" | sort: "year" | reverse %}
+    {% for pub in  sorted_pubs %}
+      <li>
+        <a href="{{ pub.url }}">
+          {{ pub.title }}
+        </a>
+        <div>
+            {% for author in pub.authors %}
+            <small> {{ author }}{% if author != pub.authors.last %},{% endif %} </small>
+            {% endfor %}
+        </div>
+      </li>
+    {% endfor %}
+    </ul>
+</div>

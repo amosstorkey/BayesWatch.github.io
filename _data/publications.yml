@@ -1,0 +1,71 @@
+- title: Towards a Neural Statistician
+  authors: [Harri Edwards, Amos Storkey]
+  year: 2016
+  month: 6
+  url: https://arxiv.org/abs/1606.02185
+  abstract: >
+    An efficient learner is one who reuses what they already know to tackle a
+    new problem. For a machine learner, this means understanding the
+    similarities amongst datasets. In order to do this, one must take seriously
+    the idea of working with datasets, rather than datapoints, as the key
+    objects to model. Towards this goal, we demonstrate an extension of a
+    variational autoencoder that can learn a method for computing
+    representations, or statistics, of datasets in an unsupervised fashion.
+    The network is trained to produce statistics that encapsulate a generative
+    model for each dataset. Hence the network enables efficient learning from
+    new datasets for both unsupervised and supervised tasks. We show that we
+    are able to learn statistics that can be used for: clustering datasets,
+    transferring generative models to new datasets, selecting representative
+    samples of datasets and classifying previously unseen classes.
+
+- title: Censoring Representations with an Adversary
+  authors: [Harri Edwards, Amos Storkey]
+  year: 2016
+  month: 3
+  url: https://arxiv.org/abs/1511.05897
+  abstract: >
+    In practice, there are often explicit constraints on what representations
+    or decisions are acceptable in an application of machine learning. For
+    example it may be a legal requirement that a decision must not favour a
+    particular group. Alternatively it can be that that representation of data
+    must not have identifying information. We address these two related issues
+    by learning flexible representations that minimize the capability of an
+    adversarial critic. This adversary is trying to predict the relevant
+    sensitive variable from the representation, and so minimizing the
+    performance of the adversary ensures there is little or no information in
+    the representation about the sensitive variable. We demonstrate this
+    adversarial approach on two problems: making decisions free from
+    discrimination and removing private information from images. We formulate
+    the adversarial model as a minimax problem, and optimize that minimax
+    objective using a stochastic gradient alternate min-max optimizer. We
+    demonstrate the ability to provide discriminant free representations for
+    standard test problems, and compare with previous state of the art methods
+    for fairness, showing statistically significant improvement across most
+    cases. The flexibility of this method is shown via a novel problem:
+    removing annotations from images, from unaligned training examples of
+    annotated and unannotated images, and with no a priori knowledge of the
+    form of annotation provided to the model.
+
+- title: Asymptotically exact inference in likelihood free models
+  authors: [Matt Graham, Amos Storkey]
+  year: 2016
+  month: 5
+  url: https://arxiv.org/abs/1605.07826
+
+- title: Pseudo-Marginal Slice Sampling
+  authors: [Iain Murray, Matt Graham]
+  year: 2016
+  month: 5
+  url: https://arxiv.org/abs/1510.02958
+
+- title: Stochastic Parallel Block Coordinate Descent for Large-scale Saddle Point Problems
+  authors: [Zhanxing Zhu, Amos Storkey]
+  year: 2016
+  month: 2
+  url: https://arxiv.org/abs/1511.07294
+
+- title: Covariance-Controlled Adaptive Langevin Thermostat for Large-Scale Bayesian Sampling
+  authors: [Xiaocheng Shang, Zhanxing Zhu, Benedict Leimkuhler, Amos Storkey]
+  year: 2015
+  month: 12
+  url: https://arxiv.org/abs/1510.08692
