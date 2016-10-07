@@ -1,0 +1,31 @@
+# Permalinks
+permalink:           pretty
+
+# Setup
+title:               BayesWatch
+tagline:             machine learning research group
+url:                 http://bayeswatch.github.io
+paginate:            1
+baseurl:             ""
+
+# Assets
+#
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir:          _sass
+  style:            :compressed
+
+# About/contact
+author:
+  name:              Amos Storkey and group members
+  url:               https://homepages.inf.ed.ac.uk/amos
+
+# Custom vars
+version:             2.0.0
+github:
+  repo:              https://github.com/poole/poole
+
+# Gems
+gems:
+  - jekyll-paginate
+  - jekyll-gist
