@@ -1,0 +1,11 @@
+- text: Home
+  url: /
+
+- text: About
+  url: /about
+
+- text: Posts
+  url: /posts
+
+- text: Publications
+  url: /publications

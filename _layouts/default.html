@@ -11,6 +11,17 @@
           <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
           <small>{{ site.tagline }}</small>
         </h3>
+        <div class="nav">
+            <ul>
+            {% for entry in site.data.navigation %}
+              <li>
+                <a href="{{ entry.url }}">
+                  {{ entry.text }}
+                </a>
+              </li>
+            {% endfor %}
+            </ul>
+        </div>
       </header>
 
       <main>
