@@ -18,7 +18,7 @@ In some such problems although we cannot evaluate the probability distribution o
   </p>
 </div>
 
-Another common case where we do not have direct access to the probability distribution we are interested in is in *simulator* models. Here we can usually easily generate samples from the model but often cannot calculate the probability of producing a particular set of outputs. The model could be a scientific simulation, for example a population model in computational biology, a model of how 3D scenes are rendered to 2D projections or a generative model trained using machine learning methods such as variational autoencoder or generative-adversial network. Simulated samples from toy examples of three such models are shown in the image below.
+Another common case where we do not have direct access to the probability distribution we are interested in is in *simulator* models. Here we can usually easily generate samples from the model but often cannot calculate the probability of producing a particular set of outputs. The model could be a scientific simulation, for example a population model in computational biology, a model of how 3D scenes are rendered to 2D projections or a generative model trained using machine learning methods such as variational autoencoder or generative-adversarial network. Simulated samples from toy examples of three such models are shown in the image below.
 
 <div class='figure'>
 <img class='inline' src='lotka-volterra-samples.svg' width='30%' />
