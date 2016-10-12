@@ -1,27 +1,43 @@
 - name: Amos Storkey
-  role: Group leader
-  homepage: http://homepages.inf.ed.ac.uk/amos/
+  role: group leader
+  url: http://homepages.inf.ed.ac.uk/amos/
 
 - name: Elliot Crowley
-  role: Research associate
-  homepage: http://www.robots.ox.ac.uk/~elliot/
-
-- name: Harri Edwards
-  role: PhD student
-  homepage: https://github.com/harri-edwards/
-
-- name: Matt Graham
-  role: PhD student
-  homepage: https://matt-graham.github.io/
-
-- name: Gavin Gray
-  role: PhD student
-  homepage: https://gngdb.github.io/
+  role: research associate
+  url: http://www.robots.ox.ac.uk/~elliot/
 
 - name: Jinli Hu
   role: PhD student
-  homepage: http://homepages.inf.ed.ac.uk/s1152840/
+  url: http://homepages.inf.ed.ac.uk/s1152840/
+  working-on: machine learning markets
+
+- name: Matt Graham
+  role: PhD student
+  url: https://matt-graham.github.io/
+  working-on: auxilliary variable MCMC methods
+  project-summary: matt-graham
+
+- name: Gavin Gray
+  role: PhD student
+  working-on: self organising information processing systems
+  url: https://gngdb.github.io/
+
+- name: Harri Edwards
+  role: PhD student
+  url: https://github.com/harri-edwards/
+  working-on: deep representation learning
 
 - name: James Owers
   role: PhD student
-  homepage: https://github.com/kungfujam/
+  url: https://github.com/kungfujam/
+  working-on: machine learning for music
+
+- name: Stanislaw Jastrzebski
+  display-name: Stanisław Jastrzębski
+  role: PhD student
+  url: http://kudkudak.github.io/
+  working-on: representation learning and cheminformatics
+  affiliation: Jagiellonian University
+  affiliation-url: http://www.en.uj.edu.pl/
+  cosupervisor: Jacek Tabor
+  cosupervisor-url: http://gmum.net/index.php?m=team&user=tabor
