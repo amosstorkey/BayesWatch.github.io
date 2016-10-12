@@ -1,0 +1,14 @@
+<ul>
+{% assign sorted = site.data.past-members | sort: "name" %}
+{% for member in sorted  %}
+  <li>
+    {% if member.url %}
+    <a href="{{ member.url }}">
+      {{ member.name }}
+    </a>
+    {% else %}
+      {{ member.name }}
+    {% endif %}
+  </li>
+{% endfor %}
+</ul>
