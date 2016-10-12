@@ -3,7 +3,7 @@ permalink:           pretty
 
 # Setup
 title:               BayesWatch
-tagline:             probabilistic machine learning group
+tagline:             machine learning group
 url:                 http://bayeswatch.github.io
 paginate:            5
 paginate_path:       "posts/page:num"
