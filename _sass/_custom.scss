@@ -1,0 +1,144 @@
+// Site specific styling
+
+.clearfix {
+    overflow: hidden;
+}
+
+.figure {
+    display: block;
+    padding: 1em;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid  #ddd;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.inline {
+    display: inline;
+    margin: 0;
+}
+
+.caption {
+    margin-top: 0.5em;
+    margin-bottom: 0;
+    font-size: 80%;
+    font-style: italic;
+}
+
+.btn {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 0;
+    padding: 5px;
+    border-radius: 4px;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    color: #333;
+    background-color: #eee;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+}
+
+.publication-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.publication {
+    margin-bottom: 0.5em;
+}
+
+.publication-date {
+    display: inline-block;
+    width: 11%;
+    opacity: .5;
+}
+
+.publication-details {
+    display: inline-block;
+    vertical-align: top;
+    width: 87%;
+}
+
+.publication-title {
+    font-size: 95%;
+}
+
+.publication-published {
+    font-size: 70%;
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+.publication-abstract {
+    font-size: 80%;
+    display: block;
+    padding: 1em;
+    margin-top: 0.5em;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid  #ddd;
+    margin-bottom: 1em;
+}
+
+.middle-align {
+    vertical-align: middle;
+}
+
+.member-name {
+    margin-bottom: 0;
+}
+
+.member-photo-card {
+    display: block;
+    float: left;
+    width: 50%;
+    padding: 5px;
+}
+
+.member-photo {
+    float: left;
+}
+
+.member-details {
+    display: block;
+    float: left;
+    margin-left: 10px;
+}
+
+.no-bottom-margin {
+    margin-bottom: 0;
+}
+
+.recent-news {
+    margin-bottom: 2em;
+}
+
+.post-short-link {
+    margin-left: 1em;
+}
+
+
+
+.collapse {
+    display: none;
+}
+
+.collapse.in {
+    display: block;
+}
+
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition-property: height, visibility;
+  transition-property: height, visibility;
+  -webkit-transition-duration: 0.35s;
+  transition-duration: 0.35s;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
