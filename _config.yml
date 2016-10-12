@@ -30,3 +30,7 @@ github:
 gems:
   - jekyll-paginate
   - jekyll-gist
+
+# Kramdown
+kramdown:
+  entity_output: :as_input
