@@ -1,71 +1,129 @@
-- title: Towards a Neural Statistician
-  authors: [Harri Edwards, Amos Storkey]
-  year: 2016
-  month: 6
-  url: https://arxiv.org/abs/1606.02185
-  abstract: >
-    An efficient learner is one who reuses what they already know to tackle a
-    new problem. For a machine learner, this means understanding the
-    similarities amongst datasets. In order to do this, one must take seriously
-    the idea of working with datasets, rather than datapoints, as the key
-    objects to model. Towards this goal, we demonstrate an extension of a
-    variational autoencoder that can learn a method for computing
-    representations, or statistics, of datasets in an unsupervised fashion.
-    The network is trained to produce statistics that encapsulate a generative
-    model for each dataset. Hence the network enables efficient learning from
-    new datasets for both unsupervised and supervised tasks. We show that we
-    are able to learn statistics that can be used for: clustering datasets,
-    transferring generative models to new datasets, selecting representative
-    samples of datasets and classifying previously unseen classes.
-
 - title: Censoring Representations with an Adversary
   authors: [Harri Edwards, Amos Storkey]
+  type: conference
+  published: Proceedings of 5th International Conference on Learning Representations (ICLR)
   year: 2016
   month: 3
   url: https://arxiv.org/abs/1511.05897
   abstract: >
-    In practice, there are often explicit constraints on what representations
-    or decisions are acceptable in an application of machine learning. For
-    example it may be a legal requirement that a decision must not favour a
-    particular group. Alternatively it can be that that representation of data
-    must not have identifying information. We address these two related issues
-    by learning flexible representations that minimize the capability of an
-    adversarial critic. This adversary is trying to predict the relevant
-    sensitive variable from the representation, and so minimizing the
-    performance of the adversary ensures there is little or no information in
-    the representation about the sensitive variable. We demonstrate this
-    adversarial approach on two problems: making decisions free from
-    discrimination and removing private information from images. We formulate
-    the adversarial model as a minimax problem, and optimize that minimax
-    objective using a stochastic gradient alternate min-max optimizer. We
-    demonstrate the ability to provide discriminant free representations for
-    standard test problems, and compare with previous state of the art methods
-    for fairness, showing statistically significant improvement across most
-    cases. The flexibility of this method is shown via a novel problem:
-    removing annotations from images, from unaligned training examples of
-    annotated and unannotated images, and with no a priori knowledge of the
-    form of annotation provided to the model.
-
-- title: Asymptotically exact inference in likelihood free models
-  authors: [Matt Graham, Amos Storkey]
-  year: 2016
-  month: 5
-  url: https://arxiv.org/abs/1605.07826
-
-- title: Pseudo-Marginal Slice Sampling
-  authors: [Iain Murray, Matt Graham]
-  year: 2016
-  month: 5
-  url: https://arxiv.org/abs/1510.02958
+    In practice, there are often explicit constraints on what representations or decisions are acceptable in an application of machine learning. For example it may be a legal requirement that a decision must not favour a particular group. Alternatively it can be that that representation of data must not have identifying information. We address these two related issues by learning flexible representations that minimize the capability of an adversarial critic. This adversary is trying to predict the relevant sensitive variable from the representation, and so minimizing the performance of the adversary ensures there is little or no information in the representation about the sensitive variable. We demonstrate this adversarial approach on two problems: making decisions free from discrimination and removing private information from images. We formulate the adversarial model as a minimax problem, and optimize that minimax objective using a stochastic gradient alternate min-max optimizer. We demonstrate the ability to provide discriminant free representations for standard test problems, and compare with previous state of the art methods for fairness, showing statistically significant improvement across most cases. The flexibility of this method is shown via a novel problem: removing annotations from images, from unaligned training examples of annotated and unannotated images, and with no a priori knowledge of the form of annotation provided to the model.
 
 - title: Stochastic Parallel Block Coordinate Descent for Large-scale Saddle Point Problems
   authors: [Zhanxing Zhu, Amos Storkey]
+  type: conference
+  published: Proceedings of the Thirtieth AAAI Conference on Artificial Intelligence (AAAI)
   year: 2016
   month: 2
   url: https://arxiv.org/abs/1511.07294
+  abstract: >
+    We consider convex-concave saddle point problems with a separable structure and non-strongly convex functions. We propose an efficient stochastic block coordinate descent method using adaptive primal-dual updates, which enables flexible parallel optimization for large-scale problems. Our method shares the efficiency and flexibility of block coordinate descent methods with the simplicity of primal-dual methods and utilizing the structure of the separable convex-concave saddle point problem. It is capable of solving a wide range of machine learning applications, including robust principal component analysis, Lasso, and feature selection by group Lasso, etc. Theoretically and empirically, we demonstrate significantly better performance than state-of-the-art methods in all these applications.
 
 - title: Covariance-Controlled Adaptive Langevin Thermostat for Large-Scale Bayesian Sampling
   authors: [Xiaocheng Shang, Zhanxing Zhu, Benedict Leimkuhler, Amos Storkey]
+  type: conference
+  published: Advances in Neural Information Processing Systems (NIPS)
   year: 2015
   month: 12
   url: https://arxiv.org/abs/1510.08692
+  abstract: >
+    Monte Carlo sampling for Bayesian posterior inference is a common approach used in machine learning. The Markov Chain Monte Carlo procedures that are used are often discrete-time analogues of associated stochastic differential equations (SDEs). These SDEs are guaranteed to leave invariant the required posterior distribution. An area of current research addresses the computational benefits of stochastic gradient methods in this setting. Existing techniques rely on estimating the variance or covariance of the subsampling error, and typically assume constant variance. In this article, we propose a covariance-controlled adaptive Langevin thermostat that can effectively dissipate parameter-dependent noise while maintaining a desired target distribution. The proposed method achieves a substantial speedup over popular alternative schemes for large-scale machine learning applications.
+
+- title: Adaptive stochastic primal-dual coordinate descent for separable saddle point problems
+  authors: [Zhanxing Zhu, Amos Storkey]
+  type: conference
+  published: Joint European Conference on Machine Learning and Knowledge Discovery in Databases.
+  year: 2015
+  month: 8
+  url: https://arxiv.org/abs/1506.04093
+  abstract: >
+    We consider a generic convex-concave saddle point problem with a separable structure, a form that covers a wide-ranged machine learning applications. Under this problem structure, we follow the framework of primal-dual updates for saddle point problems, and incorporate stochastic block coordinate descent with adaptive stepsizes into this framework. We theoretically show that our proposal of adaptive stepsizes potentially achieves a sharper linear convergence rate compared with the existing methods. Additionally, since we can select “mini-batch” of block coordinates to update, our method is also amenable to parallel processing for large-scale data. We apply the proposed method to regularized empirical risk minimization and show that it performs comparably or, more often, better than state-of-the-art methods on both synthetic and real-world data sets.
+
+- title: Multi-period Trading Prediction Markets with Connections to Machine Learning
+  authors: [Jinli Hu, Amos Storkey]
+  type: conference
+  published: Proceedings of the 31st International Conference on Machine Learning (ICML)
+  year: 2014
+  month: 6
+  url: https://arxiv.org/abs/1403.0648
+  abstract: >
+    We present a new model for prediction markets, in which we use risk measures to model agents and introduce a market maker to describe the trading process. This specific choice on modelling tools brings us mathematical convenience. The analysis shows that the whole market effectively approaches a global objective, despite that the market is designed such that each agent only cares about its own goal. Additionally, the market dynamics provides a sensible algorithm for optimising the global objective. An intimate connection between machine learning and our markets is thus established, such that we could 1) analyse a market by applying machine learning methods to the global objective, and 2) solve machine learning problems by setting up and running certain markets.
+
+- title: Training Deep Convolutional Neural Networks to Play Go
+  authors: [Chris Clark, Amos Storkey]
+  type: conference
+  published: Proceedings of the 32nd International Conference on Machine Learning (ICML)
+  year: 2015
+  month: 6
+  url: https://arxiv.org/abs/1412.3409
+  abstract: >
+    Mastering the game of Go has remained a long standing challenge to the field of AI. Modern computer Go systems rely on processing millions of possible future positions to play well, but intuitively a stronger and more 'humanlike' way to play the game would be to rely on pattern recognition abilities rather then brute force computation. Following this sentiment, we train deep convolutional neural networks to play Go by training them to predict the moves made by expert Go players. To solve this problem we introduce a number of novel techniques, including a method of tying weights in the network to 'hard code' symmetries that are expect to exist in the target function, and demonstrate in an ablation study they considerably improve performance. Our final networks are able to achieve move prediction accuracies of 41.1% and 44.4% on two different Go datasets, surpassing previous state of the art on this task by significant margins. Additionally, while previous move prediction programs have not yielded strong Go playing programs, we show that the networks trained in this work acquired high levels of skill. Our convolutional neural networks can consistently defeat the well known Go program GNU Go, indicating it is state of the art among programs that do not use Monte Carlo Tree Search. It is also able to win some games against state of the art Go playing program Fuego while using a fraction of the play time. This success at playing Go indicates high level principles of the game were learned.
+
+- title: The supervised hierarchical Dirichlet process
+  authors: [Andrew M. Dai, Amos Storkey]
+  type: journal
+  published: IEEE Transactions on Pattern Analysis and Machine Intelligence (Special Issue on Bayesian Nonparametrics)
+  year: 2014
+  month: 4
+  url: https://arxiv.org/abs/1412.5236
+  abstract: >
+    We propose the supervised hierarchical Dirichlet process (sHDP), a nonparametric generative model for the joint distribution of a group of observations and a response variable directly associated with that whole group. We compare the sHDP with another leading method for regression on grouped data, the supervised latent Dirichlet allocation (sLDA) model. We evaluate our method on two real-world classification problems and two real-world regression problems. Bayesian nonparametric regression models based on the Dirichlet process, such as the Dirichlet process-generalised linear models (DP-GLM) have previously been explored; these models allow flexibility in modelling nonlinear relationships. However, until now, Hierarchical Dirichlet Process (HDP) mixtures have not seen significant use in supervised problems with grouped data since a straightforward application of the HDP on the grouped data results in learnt clusters that are not predictive of the responses. The sHDP solves this problem by allowing for clusters to be learnt jointly from the group structure and from the label assigned to each group.
+
+- title: Series Expansion Approximations of Brownian Motion for Non-Linear Kalman Filtering of Diffusion Processes
+  authors: [Simon Lyons, Simo Särkkä, Amos Storkey]
+  type: journal
+  published: IEEE Transactions on Signal Processing
+  year: 2014
+  month: 3
+  url: https://arxiv.org/abs/1302.5324
+  abstract: >
+    In this paper, we describe a novel application of sigma-point methods to continuous-discrete filtering. In principle, the nonlinear continuous- discrete filtering problem can be solved exactly. In practice, the solution contains terms that are computationally intractible. Assumed density filtering methods attempt to match statistics of the filtering distribution to some set of more tractible probability distributions. We describe a novel method that decomposes the Brownian motion driving the signal in a generalised Fourier series, which is truncated after a number of terms. This approximation to Brownian can be described using a relatively small number of Fourier coefficients, and allows us to compute statistics of the filtering distribution with a single application of a sigma-point method. Assumed density filters that exist in the literature usually rely on discretisation of the signal dynamics followed by iterated application of a sigma point transform (or a limiting case thereof). Iterating the transform in this manner can lead to loss of information about the filtering distri- bution in highly nonlinear settings. We demonstrate that our method is better equipped to cope with such problems.
+
+- title: Isoelastic Agents and Wealth Updates in Machine Learning Markets
+  authors: [Amos Storkey, Jono Millin, Krzysztof Geras]
+  type: conference
+  published: Proceedings of the 29th International Conference on Machine Learning (ICML)
+  year: 2012
+  month: 6
+  url: https://arxiv.org/abs/1206.6443
+  abstract: >
+    Recently, prediction markets have shown considerable promise for developing flexible mechanisms for machine learning. In this paper, agents with isoelastic utilities are considered. It is shown that the costs associated with homogeneous markets of agents with isoelastic utilities produce equilibrium prices corresponding to alpha-mixtures, with a particular form of mixing component relating to each agent's wealth. We also demonstrate that wealth accumulation for logarithmic and other isoelastic agents (through payoffs on prediction of training targets) can implement both Bayesian model updates and mixture weight updates by imposing different market payoff structures. An iterative algorithm is given for market equilibrium computation. We demonstrate that inhomogeneous markets of agents with isoelastic utilities outperform state of the art aggregate classifiers such as random forests, as well as single classifiers (neural networks, decision trees) on a number of machine learning benchmarks, and show that isoelastic combination methods are generally better than their logarithmic counterparts.
+
+- title: A Topic Model for Melodic Sequences
+  authors: [Athina Spiliopoulou, Amos Storkey]
+  type: conference
+  published: Proceedings of the 29th International Conference on Machine Learning (ICML)
+  year: 2012
+  month: 6
+  url: https://arxiv.org/abs/1206.6441
+  abstract: >
+    We examine the problem of learning a probabilistic model for melody directly from musical sequences belonging to the same genre. This is a challenging task as one needs to capture not only the rich temporal structure evident in music, but also the complex statistical dependencies among different music components. To address this problem we introduce the Variable-gram Topic Model, which couples the latent topic formalism with a systematic model for contextual information. We evaluate the model on next-step prediction. Additionally, we present a novel way of model evaluation, where we directly compare model samples with data sequences using the Maximum Mean Discrepancy of string kernels, to assess how close is the model distribution to the data distribution. We show that the model has the highest performance under both evaluation measures when compared to LDA, the Topic Bigram and related non-topic models.
+
+- title: Comparing Probabilistic Models for Melodic Sequences
+  authors: [Athina Spiliopoulou, Amos Storkey]
+  type: conference
+  published: Proceedings of the ECML-PKDD
+  year: 2011
+  month: 9
+  url: https://arxiv.org/abs/1109.6804
+  abstract: >
+    Modelling the real world complexity of music is a challenge for machine learning. We address the task of modeling melodic sequences from the same music genre. We perform a comparative analysis of two probabilistic models; a Dirichlet Variable Length Markov Model (Dirichlet-VMM) and a Time Convolutional Restricted Boltzmann Machine (TC-RBM). We show that the TC-RBM learns descriptive music features, such as underlying chords and typical melody transitions and dynamics. We assess the models for future prediction and compare their performance to a VMM, which is the current state of the art in melody generation. We show that both models perform significantly better than the VMM, with the Dirichlet-VMM marginally outperforming the TC-RBM. Finally, we evaluate the short order statistics of the models, using the Kullback-Leibler divergence between test sequences and model samples, and show that our proposed methods match the statistics of the music genre significantly better than the VMM.
+
+- title: Machine Learning Markets
+  authors: [Amos Storkey]
+  type: conference
+  published: Proceedings of the Fourteenth International Conference on Artificial Intelligence and Statistics (AISTATS)
+  year: 2011
+  month: 4
+  url: https://arxiv.org/abs/1106.4509
+  abstract: >
+    Prediction markets show considerable promise for developing flexible mechanisms for machine learning. Here, machine learning markets for multivariate systems are defined, and a utility-based framework is established for their analysis. This differs from the usual approach of defining static betting functions. It is shown that such markets can implement model combination methods used in machine learning, such as product of expert and mixture of expert approaches as equilibrium pricing models, by varying agent utility functions. They can also implement models composed of local potentials, and message passing methods. Prediction markets also allow for more flexible combinations, by combining multiple different utility functions. Conversely, the market mechanisms implement inference in the relevant probabilistic models. This means that market mechanism can be utilized for implementing parallelized model building and inference for probabilistic modelling.
+
+- title: Dynamic Trees - A Structured Variational Method Giving Efficient Propagation Rules
+  authors: [Amos Storkey]
+  type: conference
+  published: Proceedings of the Sixteenth Conference on Uncertainty in Artificial Intelligence (UAI)
+  year: 2000
+  month: 6
+  url: https://arxiv.org/abs/1301.3895
+  abstract: >
+    Dynamic trees are mixtures of tree structured belief networks. They solve some of the problems of fixed tree networks at the cost of making exact inference intractable. For this reason approximate methods such as sampling or mean field approaches have been used. However, mean field approximations assume a factorized distribution over node states. Such a distribution seems unlickely in the posterior, as nodes are highly correlated in the prior. Here a structured variational approach is used, where the posterior distribution over the non-evidential nodes is itself approximated by a dynamic tree. It turns out that this form can be used tractably and efficiently. The result is a set of update rules which can propagate information through the network to obtain both a full variational approximation, and the relevant marginals. The progagtion rules are more efficient than the mean field approach and give noticeable quantitative and qualitative improvement in the inference. The marginals calculated give better approximations to the posterior than loopy propagation on a small toy problem.
