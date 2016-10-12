@@ -1,0 +1,40 @@
+<ul>
+{% for member in site.data.members %}
+  <li>
+    {% if member.url %}
+    <a href='{{ member.url }}'>
+    {% endif %}
+    {% if member.display-name %}
+      {{ member.display-name }}
+    {% else %}
+      {{ member.name }}
+    {% endif %}
+    {% if member.url %}
+    </a>
+    {% endif %}
+    <small>
+    {% if member.role == 'group leader' %}
+      the {{ member.role }}
+    {% else %}
+      a {{ member.role }}
+    {% endif %}
+    {% if member.affiliation %}
+      at <a href='{{ member.affiliation-url }}'>{{ member.affiliation }}</a>
+    {% endif %}
+    {% if member.working-on %}
+      working on
+      {% if member.project-summary %}
+        <a href='/projects/{{ member.project-summary }}'>
+          {{ member.working-on }}
+        </a>
+      {% else %}
+        {{ member.working-on }}
+      {% endif %}
+    {% endif %}
+    {% if member.cosupervisor %}
+      co-supervised by Amos and <a href='{{ member.cosupervisor-url }}'>{{ member.cosupervisor }} </a>
+    {% endif %}
+    </small>
+  </li>
+{% endfor %}
+</ul>

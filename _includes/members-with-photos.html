@@ -1,0 +1,34 @@
+<div class='clearfix'>
+{% for member in site.data.members %}
+  {% assign id = member.name | slugify %}
+  {% assign temp_1 = member.role | capitalize | slice: 0 %}
+  {% assign temp_2 = member.role | slice: 1, 100 %}
+  {% assign capitalized_role = temp_1 | append: temp_2 %}
+  <div class='member-photo-card'>
+    <img class='member-photo' src='/photos/{{ id }}.jpg' width='100' />
+    <div class='member-details'>
+        <p class='member-name'>
+            {% if member.url %}
+            <a href='{{ member.url }}'>
+            {% endif %}
+              {% if member.display-name %}
+                {{ member.display-name }}
+              {% else %}
+                {{ member.name }}
+              {% endif %}
+            {% if member.url %}
+            </a>
+            {% endif %}
+        </p>
+        <p class='no-bottom-margin'>
+            <small> {{ capitalized_role }} </small>
+        </p>
+        <p>
+            {% if member.affiliation %}
+            <a href='{{ member.affiliation-url }}'><small> @ {{ member.affiliation}} </small></a>
+            {% endif %}
+        </p>
+    </div>
+</div>
+{% endfor %}
+</div>
