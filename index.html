@@ -4,11 +4,21 @@ title: Home
 ---
 
 <div>
-    Probabilistic machine learning research group at
-    <a href="http://www.ed.ac.uk">University of Edinburgh</a>
-    <a href="http://www.inf.ed.ac.uk">School of Informatics</a>.
+    <p>
+      BayesWatch is the research group led by Amos Storkey in the
+      <a href='http://www.inf.ed.ac.uk'>School of Informatics</a> at
+      University of Edinburgh. We are part of the wider <a href='http://www.anc.ed.ac.uk/machine-learning'>machine learning group</a> within the <a href='http://www.anc.ed.ac.uk/'>Institute for Adaptive and Neural Computation</a>.
+    </p>
 
-    <h4>Current members</h4>
+    <h3>Current members</h3>
 
-    {% include members.html %}
+    {% include members-with-photos.html %}
+</div>
+
+<div class='recent-news'>
+    <h3> Recent news </h3>
+    {% for post in site.posts limit:5 %}
+      <small>{{ post.date | date: "%B %e, %Y" }}</small>
+      <a class='post-short-link' href="{{ post.url }}">{{ post.title }}</a>
+    {% endfor %}
 </div>
