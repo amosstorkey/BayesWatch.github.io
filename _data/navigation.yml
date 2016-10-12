@@ -4,8 +4,11 @@
 - text: About
   url: /about
 
-- text: Posts
+- text: News
   url: /posts
 
 - text: Publications
   url: /publications
+
+- text: Contact
+  url: /contact

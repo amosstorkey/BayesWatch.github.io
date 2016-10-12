@@ -3,28 +3,19 @@ layout: page
 title: About
 ---
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
+<div>
+    <p>
+      BayesWatch is the research group led by Amos Storkey in the
+      <a href='http://www.inf.ed.ac.uk'>School of Informatics</a> at
+      University of Edinburgh. We are part of the wider <a href='http://www.anc.ed.ac.uk/machine-learning'>machine learning group</a> within the <a href='http://www.anc.ed.ac.uk/'>Institute for Adaptive and Neural Computation</a>.
+    </p>
 
-In the novel, *The Strange Case of Dr. Jekyll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+    <p>The current group members are</p>
 
-There are currently two themes built on Poole:
+    {% include members-long.html %}
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
+    <p>Past members of the group include</p>
 
-Learn more and contribute on [GitHub](https://github.com/poole).
+    {% include past-members.html %}
 
-## Setup
-
-Some fun facts about the setup of this project include:
-
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
+</div>
