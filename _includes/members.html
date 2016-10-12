@@ -1,9 +1,13 @@
 <ul>
 {% for member in site.data.members %}
   <li>
-    <a href="{{ member.homepage }}">
+    {% if member.url %}
+    <a href="{{ member.url }}">
       {{ member.name }}
     </a>
+    {% else %}
+      {{ member.name }}
+    {% endif %}
     <small> {{ member.role }} </small>
   </li>
 {% endfor %}
