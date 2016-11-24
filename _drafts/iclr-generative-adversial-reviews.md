@@ -6,12 +6,12 @@ author: BayesWatch
 
 Suggested layout:
 
-### [Generative Adversarial Networks as Variational Training of Energy Based Models](https://openreview.net/pdf?id=ry7O1ssex)
+## [Generative Adversarial Networks as Variational Training of Energy Based Models](https://openreview.net/pdf?id=ry7O1ssex)
 ### *Shuangfei Zhai, Yu Cheng, Rogerio Feris, Zhongfei Zhang*
 
 (One or two paragraphs describing paper and any thoughts on it)
 
-### [Improved Techniques for Trainings GANs][improved]
+## [Improved Techniques for Trainings GANs][improved]
 ### *Tim Salimans, Ian Goodfellow, Wojciech Zaremba, Vicki Cheung, Alec Radford, Xi Chen*
 
 This paper has two parts: four recommended techniques for training GANs and
