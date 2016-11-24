@@ -60,7 +60,7 @@ $$
 \newcommand{\xB}{\mathbf{x}}
 \newcommand{\yB}{\mathbf{y}}
 \newcommand{\zB}{\mathbf{z}}
-\nemcommand{\Exp}{\mathbb{E}}
+\newcommand{\Exp}{\mathbb{E}}
 || \Exp_{\xB \sim p_{\text{data}}} \fB (\xB) - \Exp_{\zB \sim p_{\zB}(\zB)} \fB (G(\zB)) ||_2^2
 $$
 
@@ -134,7 +134,7 @@ labelling samples with Google's inception model. The inception model gives
 you $p(y|\xB)$, so you want to maximise:
 
 $$
-\Exp KL (p(y|\xB)||p(y))
+\Exp_{\xB} KL (p(y|\xB)||p(y))
 $$
 
 Then they exponentiate the resulting value for no real reason, just to make
