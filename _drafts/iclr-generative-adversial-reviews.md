@@ -178,13 +178,11 @@ MNIST, SVHN and CIFAR-10.
 
 ## Disentangling factors of variation in deep representations using adversarial training 
 ### Michael Mathieu, Junbo Zhao, Pablo Sprechmann, Aditya Ramesh and Yann LeCun
-
-When training a [VAE][] you will have an inference network $q(z|x)$. If you
-have another source of information you'd like to base the approximate
-posterior on, like some labels $s$, then you would make $q(z|x,s)$. But $q$
-is a complicated function, and it can ignore $s$ if it wants, and still
-perform well. This paper describes an adversarial way to force $q$ to use
-$s$.
+ning a [VAE][] you will have an inference network $q(z|x)$. If you have
+another source of information you'd like to base the approximate posterior
+on, like some labels $s$, then you would make $q(z|x,s)$. But $q$ is a
+complicated function, and it can ignore $s$ if it wants, and still perform
+well. This paper describes an adversarial way to force $q$ to use $s$.
 
 This is made more complicated in the paper, because $s$ is not necessarily
 a label, and in fact _is real and continuous_ (because it's easier to
@@ -200,8 +198,8 @@ $$
 \mu, \sigma = f_{z}(x,s)
 $$
 
-We sample $\mu$ and $\sigma$ [according to the reparameterization trick, as
-this is a VAE][vae]:
+We sample $z$ using $\mu$ and $\sigma$ [according to the reparameterization
+trick, as this is a VAE][vae]:
 
 $$
 z \sim \mathcal{N}(\mu, \sigma)
@@ -228,6 +226,20 @@ through the VAE to get $s_1$, $z_1$ (latent) and $\tilde{x}_{1}$.
     3. As $s_1'$ _should_ include the label information, you should have
 reproduced $x_1$, so apply reconstruction loss to whatever your decoder has
 given you (call it $\tilde{x}_1'$).
-3. 
+3. Adversarial Loss encouraging realistic examples from the same class,
+regardless of $z$.
+    1. Propagate $x_2$ (totally separate example) through the network to
+get $s_2$.
+    2. Generate two $\tilde{x}_{2}$ variables, one with the prior by
+sampling from $p(z)$ and one using $z_{1}$.
+    3. Get the adversary to classify these as fake versus the real sample
+$x_{2}$.
+
+This is pretty well described in Figure 1 in the paper.
+
+Experiments show that $s$ ends up coding for the class, and $z$ codes for
+other stuff, like the angle of digits or line thickness. They also try to
+classify using $z$ and $s$ and show that $s$ is useful but $z$ is not (can
+only predict as well as chance). So, it works.
 
 [vae]: https://jaan.io/unreasonable-confusion/
