@@ -4,12 +4,7 @@
 
 - name: Elliot Crowley
   role: research associate
-  url: http://www.robots.ox.ac.uk/~elliot/
-
-- name: Jinli Hu
-  role: PhD student
-  url: http://homepages.inf.ed.ac.uk/s1152840/
-  working-on: machine learning markets
+  url: http://homepages.inf.ed.ac.uk/ecrowley/
 
 - name: Matt Graham
   role: PhD student
