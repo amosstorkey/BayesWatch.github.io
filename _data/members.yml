@@ -6,17 +6,17 @@
   role: research associate
   url: http://homepages.inf.ed.ac.uk/ecrowley/
   working-on: interpretability and adversarial methods in deep learning
+  
+- name: Gavin Gray
+  role: PhD student
+  url: http://gra.ygav.in/
+  working-on: self organising information processing systems
 
 - name: Matt Graham
   role: PhD student
   url: https://matt-graham.github.io/
   working-on: auxilliary variable MCMC methods
   project-summary: matt-graham
-
-- name: Gavin Gray
-  role: PhD student
-  url: http://gra.ygav.in/
-  working-on: self organising information processing systems
 
 - name: Harri Edwards
   role: PhD student
