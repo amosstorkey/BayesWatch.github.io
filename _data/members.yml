@@ -5,7 +5,7 @@
 - name: Elliot Crowley
   role: research associate
   url: http://homepages.inf.ed.ac.uk/ecrowley/
-  working on: interpretability and adversarial methods in deep learning
+  working-on: interpretability and adversarial methods in deep learning
 
 - name: Matt Graham
   role: PhD student
@@ -37,4 +37,3 @@
   affiliation-url: http://www.en.uj.edu.pl/
   cosupervisor: Jacek Tabor
   cosupervisor-url: http://gmum.net/index.php?m=team&user=tabor
-  
