@@ -1,3 +1,13 @@
+- title: Continuously tempered Hamiltonian Monte Carlo
+  authors: [Matt Graham, Amos Storkey]
+  type: conference
+  published: Proceedings of the 33rd Conference on Uncertainty in Artificial Intelligence (UAI)
+  year: 2017
+  month: 8
+  url: https://arxiv.org/abs/1704.03338
+  abstract: >
+    Hamiltonian Monte Carlo (HMC) is a powerful Markov chain Monte Carlo (MCMC) method for performing approximate inference in complex probabilistic models of continuous variables. In common with many MCMC methods, however, the standard HMC approach performs poorly in distributions with multiple isolated modes. We present a method for augmenting the Hamiltonian system with an extra continuous temperature control variable which allows the dynamic to bridge between sampling a complex target distribution and a simpler unimodal base distribution. This augmentation both helps improve mixing in multimodal targets and allows the normalisation constant of the target distribution to be estimated. The method is simple to implement within existing HMC code, requiring only a standard leapfrog integrator. We demonstrate experimentally that the method is competitive with annealed importance sampling and simulating tempering methods at sampling from challenging multimodal distributions and estimating their normalising constants.
+
 - title: Towards a Neural Statistician
   authors: [Harri Edwards, Amos Storkey]
   type: conference
