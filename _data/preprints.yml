@@ -1,4 +1,12 @@
-- title: Bayesian Inference in Sparse Gaussian Graphical Model
+- title: Moonshine: Distilling with Cheap Convolutions
+  authors: [Elliot Crowley, Gavin Gray, Amos Storkey]
+  year: 2017
+  month: 11
+  url: https://arxiv.org/abs/1711.02613
+  abstract: >
+    Model distillation compresses a trained machine learning model, such as a neural network, into a smaller alternative such that it could be easily deployed in a resource limited setting. Unfortunately, this requires engineering two architectures: a student architecture smaller than the first teacher architecture but trained to emulate it. In this paper, we present a distillation strategy that produces a student architecture that is a simple transformation of the teacher architecture. Recent model distillation methods allow us to preserve most of the performance of the trained model after replacing convolutional blocks with a cheap alternative. In addition, distillation by attention transfer provides student network performance that is better than training that student architecture directly on data.
+
+- title: Bayesian Inference in Sparse Gaussian Graphical Models
   authors: [Peter Orchard, Felix Agakov, Amos Storkey]
   year: 2013
   month: 9
