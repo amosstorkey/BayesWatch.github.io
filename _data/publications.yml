@@ -1,3 +1,13 @@
+- title: Asymptotically exact inference in differentiable generative models
+  authors: [Matt Graham, Amos Storkey]
+  type: journal
+  published: Electronic Journal of Statistics
+  year: 2017
+  month: 12
+  url: http://dx.doi.org/10.1214/17-EJS1340SI
+  abstract: >
+    Many generative models can be expressed as a differentiable function applied to input variables sampled from a known probability distribution. This framework includes both the generative component of learned parametric models such as variational autoencoders and generative adversarial networks, and also procedurally defined simulator models which involve only differentiable operations. Though the distribution on the input variables to such models is known, often the distribution on the output variables is only implicitly defined. We present a method for performing efficient Markov chain Monte Carlo inference in such models when conditioning on observations of the model output. For some models this offers an asymptotically exact inference method where approximate Bayesian computation might otherwise be employed. We use the intuition that computing conditional expectations is equivalent to integrating over a density defined on the manifold corresponding to the set of inputs consistent with the observed outputs. This motivates the use of a constrained variant of Hamiltonian Monte Carlo which leverages the smooth geometry of the manifold to move between inputs exactly consistent with observations. We validate the method by performing inference experiments in a diverse set of models.
+
 - title: Continuously tempered Hamiltonian Monte Carlo
   authors: [Matt Graham, Amos Storkey]
   type: conference
