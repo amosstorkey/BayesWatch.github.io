@@ -7,28 +7,10 @@ layout: default
   <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date_to_string }}</time>
   {% assign id = page.author | slugify %}
     <div class='member-photo-card'>
-    <img class='member-photo' src='/photos/{{ id }}.jpg' width='100' />
+    <img class='member-photo' src='/photos/{{ id }}.jpg' width='50' />
     <div class='member-details'>
         <p class='member-name'>
-            {% if member.url %}
-            <a href='{{ member.url }}'>
-            {% endif %}
-              {% if member.display-name %}
-                {{ member.display-name }}
-              {% else %}
-                {{ member.name }}
-              {% endif %}
-            {% if member.url %}
-            </a>
-            {% endif %}
-        </p>
-        <p class='no-bottom-margin'>
-            <small> {{ capitalized_role }} </small>
-        </p>
-        <p>
-            {% if member.affiliation %}
-            <a href='{{ member.affiliation-url }}'><small> @ {{ member.affiliation}} </small></a>
-            {% endif %}
+            {{ member.name }}
         </p>
       </div>
       <div>
