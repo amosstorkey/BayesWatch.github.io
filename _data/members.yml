@@ -1,12 +1,12 @@
 - name: Amos Storkey
+  display-name: Prof Amos Storkey
   role: group leader
   url: http://homepages.inf.ed.ac.uk/amos/
-  title: Professor
 
 - name: Elliot Crowley
+  display-name: Dr Elliot Crowley
   role: research associate
   url: http://homepages.inf.ed.ac.uk/ecrowley/
-  title: Dr
   
 - name: Gavin Gray
   role: PhD student
