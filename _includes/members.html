@@ -3,10 +3,10 @@
   <li>
     {% if member.url %}
     <a href="{{ member.url }}">
-      {{ member.name }}
+      {{ member.title }}{{ member.name }}
     </a>
     {% else %}
-      {{ member.name }}
+      {{ member.title }}{{ member.name }}
     {% endif %}
     <small> {{ member.role }} </small>
   </li>
