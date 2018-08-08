@@ -1,11 +1,11 @@
 - text: Home
   url: /
-
-- text: Blog
-  url: /posts
-
+  
 - text: Publications
   url: /publications
 
+- text: Blog
+  url: /posts
+  
 - text: Contact
   url: /contact
