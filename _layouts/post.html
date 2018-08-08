@@ -6,11 +6,7 @@ layout: default
   <h1 class="post-title">{{ page.title }}</h1>
   <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date_to_string }}</time>
   {% assign id = page.author | slugify %}
-
-  
-  {{ content }}
-
-
+<div class='clearfix'>
     <div class='member-photo-card'>
       <img class='member-photo' src='/photos/{{ id }}.jpg' width='50' />
       <div class='member-details'>
@@ -19,6 +15,10 @@ layout: default
         </p>
       </div>
   </div>
+  </div>
+  
+  {{ content }}
+
 </article>
 
 <!--aside class="related">
