@@ -17,3 +17,8 @@ author: <FIRSTNAME> <SECONDNAME>
 ---
 <CONTENTS>
 ```
+## Adding a publication
+
+For pre-prints, append `_data/preprints.yml` with your paper in the correct format.
+
+For conference proceedings append `_data/publications/.yml`
