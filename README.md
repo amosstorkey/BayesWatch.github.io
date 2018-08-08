@@ -3,7 +3,7 @@ Group homepage
 
 ## Adding a Blog post
 
-add a markdown file to https://github.com/BayesWatch/BayesWatch.github.io/_posts with the name
+add a markdown file to the `_posts` folder above with the name:
 
 `<YYYY>-<MM>-<DD>-<SHORT_TITLE>.md`.
 
