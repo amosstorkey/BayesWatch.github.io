@@ -18,8 +18,8 @@ title: Publications
                 <a class='publication-title'  href="{{ pub.url }}">
                   {{ pub.title }}
                 </a>
-                {% if pub.notes %}
-                <p class='publication-notes'> {{ pub.notes }} </p>
+                {% if pub.note %}
+                <p class='publication-note'> {{ pub.note }} </p>
                 {% endif %}
                 <div class='publication-authors'>
                     <small> {{ pub.authors | join: ', ' }} </small>
