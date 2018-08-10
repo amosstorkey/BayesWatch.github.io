@@ -7,23 +7,26 @@
   display-name: Dr Elliot J. Crowley
   role: research associate
   url: http://homepages.inf.ed.ac.uk/ecrowley/
-  
-- name: Gavin Gray
-  role: PhD student
-  url: http://gra.ygav.in/
-  working-on: self organising information processing systems
 
-- name: Harri Edwards
+- name: Antreas Antoniou
+  role: PhD student
+  url: https://resume.creddle.io/resume/eatnzkipvnz
+  
+  - name: Luke Darlow
+  role: PhD student
+  url: http://lukedarlow.com/
+  
+  - name: Harri Edwards
   role: PhD student
   url: https://github.com/harri-edwards/
   working-on: deep representation learning
   affiliation: OpenAI
   affiliation-url: https://openai.com/
-
-- name: James Owers
+  
+- name: Gavin Gray
   role: PhD student
-  url: https://jamesowers.github.io/
-  working-on: synthesis and feature learning for music
+  url: http://gra.ygav.in/
+  working-on: self organising information processing systems
 
 - name: Stanislaw Jastrzebski
   display-name: Stanisław Jastrzębski
@@ -35,12 +38,13 @@
   cosupervisor: Jacek Tabor
   cosupervisor-url: http://gmum.net/index.php?m=team&user=tabor
 
-- name: Antreas Antoniou
+- name: James Owers
   role: PhD student
-  url: https://resume.creddle.io/resume/eatnzkipvnz
-  
-- name: Luke Darlow
-  role: PhD student
-  url: http://lukedarlow.com/
-  
+  url: https://jamesowers.github.io/
+  working-on: synthesis and feature learning for music
+
+
+
+
+
 
