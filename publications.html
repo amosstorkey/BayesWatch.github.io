@@ -18,6 +18,9 @@ title: Publications
                 <a class='publication-title'  href="{{ pub.url }}">
                   {{ pub.title }}
                 </a>
+                {% if pub.notes %}
+                <p class='publication-notes'> {{ pub.notes }} </p>
+                {% endif %}
                 <div class='publication-authors'>
                     <small> {{ pub.authors | join: ', ' }} </small>
                     <button class="btn" data-toggle="collapse"
