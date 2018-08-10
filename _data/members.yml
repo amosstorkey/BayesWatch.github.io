@@ -16,17 +16,22 @@
   role: PhD student
   url: http://lukedarlow.com/
   
+- name: Gavin Gray
+  role: PhD student
+  url: http://gra.ygav.in/
+  working-on: self organising information processing systems
+  
+- name: James Owers
+  role: PhD student
+  url: https://jamesowers.github.io/
+  working-on: synthesis and feature learning for music
+
 - name: Harri Edwards
   role: PhD student
   url: https://github.com/harri-edwards/
   working-on: deep representation learning
   affiliation: OpenAI
   affiliation-url: https://openai.com/
-  
-- name: Gavin Gray
-  role: PhD student
-  url: http://gra.ygav.in/
-  working-on: self organising information processing systems
 
 - name: Stanislaw Jastrzebski
   display-name: Stanisław Jastrzębski
@@ -37,14 +42,5 @@
   affiliation-url: http://www.en.uj.edu.pl/
   cosupervisor: Jacek Tabor
   cosupervisor-url: http://gmum.net/index.php?m=team&user=tabor
-
-- name: James Owers
-  role: PhD student
-  url: https://jamesowers.github.io/
-  working-on: synthesis and feature learning for music
-
-
-
-
 
 
