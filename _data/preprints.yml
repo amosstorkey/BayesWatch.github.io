@@ -8,7 +8,7 @@
     Recent work has identified that using a high learning rate or a small batch size for Stochastic Gradient Descent (SGD) based training of deep neural networks encourages finding flatter minima of the training loss towards the end of training. Moreover, measures of the flatness of minima have been shown to correlate with good generalization performance. Extending this previous work, we investigate the loss curvature through the Hessian eigenvalue spectrum in the early phase of training and find an analogous bias: even at the beginning of training, a high learning rate or small batch size influences SGD to visit flatter loss regions. In addition, the evolution of the largest eigenvalues appears to always follow a similar pattern, with a fast increase in the early phase, and a decrease or stabilization thereafter, where the peak value is determined by the learning rate and batch size. Finally, we find that by altering the learning rate just in the direction of the eigenvectors associated with the largest eigenvalues, SGD can be steered towards regions which are an order of magnitude sharper but correspond to models with similar generalization, which suggests the curvature of the endpoint found by SGD is not predictive of its generalization properties.
 
 - title: Three Factors Influencing Minima in SGD
-  authors: [Stanisław Jastrzębski*, Zachary Kenton*, Devansh Arpit, Nicolas Ballas, Asja Fischer, Yoshua Bengio, Amos Storkey]
+  authors: [Stanisław Jastrzębski, Zachary Kenton, Devansh Arpit, Nicolas Ballas, Asja Fischer, Yoshua Bengio, Amos Storkey]
   year: 2017
   month: 11
   note: To appear at International Conference on Artificial Neural Networks (ICANN 2018)
