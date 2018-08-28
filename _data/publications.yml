@@ -21,7 +21,7 @@
 - title: Towards a Neural Statistician
   authors: [Harri Edwards, Amos Storkey]
   type: conference
-  published: Proceedings of 6th International Conference on Learning Representations (ICLR)
+  published: Proceedings of the 6th International Conference on Learning Representations (ICLR)
   year: 2017
   month: 4
   url: https://arxiv.org/abs/1606.02185
@@ -41,7 +41,7 @@
 - title: Censoring Representations with an Adversary
   authors: [Harri Edwards, Amos Storkey]
   type: conference
-  published: Proceedings of 5th International Conference on Learning Representations (ICLR)
+  published: Proceedings of the 5th International Conference on Learning Representations (ICLR)
   year: 2016
   month: 3
   url: https://arxiv.org/abs/1511.05897
@@ -173,17 +173,17 @@
   year: 2018
   type: workshop
   month: 7
-  published: Modern Trends in Nonconvex Optimization for Machine Learning Workshop (ICML 2018) 
+  published: Modern Trends in Nonconvex Optimization for Machine Learning Workshop, ICML 
   url: https://arxiv.org/abs/1807.05031
   abstract: >
     Recent work has identified that using a high learning rate or a small batch size for Stochastic Gradient Descent (SGD) based training of deep neural networks encourages finding flatter minima of the training loss towards the end of training. Moreover, measures of the flatness of minima have been shown to correlate with good generalization performance. Extending this previous work, we investigate the loss curvature through the Hessian eigenvalue spectrum in the early phase of training and find an analogous bias: even at the beginning of training, a high learning rate or small batch size influences SGD to visit flatter loss regions. In addition, the evolution of the largest eigenvalues appears to always follow a similar pattern, with a fast increase in the early phase, and a decrease or stabilization thereafter, where the peak value is determined by the learning rate and batch size. Finally, we find that by altering the learning rate just in the direction of the eigenvectors associated with the largest eigenvalues, SGD can be steered towards regions which are an order of magnitude sharper but correspond to models with similar generalization, which suggests the curvature of the endpoint found by SGD is not predictive of its generalization properties.
 
 - title: Three Factors Influencing Minima in SGD
   authors: [Stanisław Jastrzębski, Zachary Kenton, Devansh Arpit, Nicolas Ballas, Asja Fischer, Yoshua Bengio, Amos Storkey]
-  year: 2017
-  month: 11
+  year: 2018
+  month: 10
   type: conference
-  published: International Conference on Artificial Neural Networks (ICANN 2018)
+  published: to appear in the Proceedings of the 27th International Conference on Artificial Neural Networks (ICANN)
   url: http://arxiv.org/abs/1711.04623
   abstract: >
     We investigate the dynamical and convergent properties of stochastic gradient descent (SGD) applied to Deep Neural Networks (DNNs). Characterizing the relation between learning rate, batch size and the properties of the final minima, such as width or generalization, remains an open question. In order to tackle this problem we investigate the previously proposed approximation of SGD by a stochastic differential equation (SDE). We theoretically argue that three factors - learning rate, batch size and gradient covariance - influence the minima found by SGD. In particular we find that the ratio of learning rate to batch size is a key determinant of SGD dynamics and of the width of the final minima, and that higher values of the ratio lead to wider minima and often better generalization. We confirm these findings experimentally. Further, we include experiments which show that learning rate schedules can be replaced with batch size schedules and that the ratio of learning rate to batch size is an important factor influencing the memorization process.
