@@ -4,42 +4,7 @@ title: Publications
 ---
 
 <div>
-    <h2>Preprints</h2>
-    <ul class='publication-list'>
-    {% assign sorted_pubs = site.data.preprints | sort: "month" | sort: "year" | reverse %}
-    {% for pub in sorted_pubs %}
-        {% assign id = pub.title | append: '-' | append: pub.published | slugify  %}
-        <li class='publication'>
-        <div class='clearfix'>
-            <small class='publication-date'>
-                {{ pub.year }}/{%if pub.month < 10 %}0{% endif %}{{ pub.month }}:
-            </small>
-            <div class='publication-details'>
-                <a class='publication-title'  href="{{ pub.url }}">
-                  {{ pub.title }}
-                </a>
-                {% if pub.note %}
-                <p class='publication-published'> {{ pub.note }} </p>
-                {% endif %}
-                <div class='publication-authors'>
-                    <small> {{ pub.authors | join: ', ' }} </small>
-                    <button class="btn" data-toggle="collapse"
-                      data-target="#abs-{{ id }}">
-                        Abstract
-                    </button>
-                </div>
-                <div id="abs-{{ id }}" class="collapse publication-abstract">
-                    {{ pub.abstract }}
-                </div>
-            </div>
-        </div>
-        </li>
-    {% endfor %}
-    </ul>
-</div>
-
-<div>
-    <h2>Conference proceedings</h2>
+    <h2>Publications</h2>
     <ul class='publication-list'>
     {% assign sorted_pubs = site.data.publications | sort: "month" | sort: "year" | reverse %}
     {% for pub in  sorted_pubs %}
