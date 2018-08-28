@@ -13,7 +13,7 @@ title: Publications
         <li class='publication'>
         <div class='clearfix'>
             <small class='publication-date'>
-                {{ pub.year }}:
+             {{ pub.year }}/{%if pub.month < 10 %}0{% endif %}{{ pub.month }}: 
             </small>
             <div class='publication-details'>
                 <a class='publication-title'  href="{{ pub.url }}">
