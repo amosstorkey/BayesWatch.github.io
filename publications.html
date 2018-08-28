@@ -9,6 +9,7 @@ title: Publications
     {% assign sorted_pubs = site.data.publications | sort: "month" | sort: "year" | reverse %}
     {% for pub in  sorted_pubs %}
         {% assign id = pub.title | append: '-' | append: pub.published | slugify  %}
+        {% if pub.year > 2009 %} 
         <li class='publication'>
         <div class='clearfix'>
             <small class='publication-date'>
@@ -32,6 +33,7 @@ title: Publications
             </div>
         </div>
         </li>
+       {% endif %}
     {% endfor %}
     </ul>
 </div>
