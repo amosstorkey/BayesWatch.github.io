@@ -6,7 +6,7 @@ title: Publications
 <div>
     <h2>Publications</h2>
     <p>
-    <button:disabled class="conference" disabled>conference</button>
+    <button class="conference" disabled>conference</button>
     <button class="workshop" disabled>workshop</button>
     <button class="preprint" disabled>preprint</button>
     <button class="journal" disabled>journal</button>
@@ -20,9 +20,11 @@ title: Publications
         <li class='publication'>
         <div class='clearfix'>
             <small class='publication-date'>
+                  <a href="{{ pub.url }}">
             <button class="{{ pub.type }}">
                         {{ pub.year }}/{%if pub.month < 10 %}0{% endif %}{{ pub.month }}:
                     </button>
+                </a>
             </small>
 
             <div class='publication-details'>
