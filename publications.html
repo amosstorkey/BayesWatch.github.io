@@ -6,11 +6,11 @@ title: Publications
 <div>
     <h2>Publications</h2>
     <p>
-    <button[disabled] class="conference" disabled>conference</button>
-    <button[disabled] class="workshop" disabled>workshop</button>
-    <button[disabled] class="preprint" disabled>preprint</button>
-    <button[disabled] class="journal" disabled>journal</button>
-    <button[disabled] class="techreport" disabled>tech report</button>
+    <button class="conference" disabled>conference</button>
+    <button class="workshop" disabled>workshop</button>
+    <button class="preprint" disabled>preprint</button>
+    <button class="journal" disabled>journal</button>
+    <button class="techreport" disabled>tech report</button>
     </p>
     <ul class='publication-list'>
     {% assign sorted_pubs = site.data.publications | sort: "month" | sort: "year" | reverse %}
@@ -20,7 +20,7 @@ title: Publications
         <li class='publication'>
         <div class='clearfix'>
             <small class='publication-date'>
-            <button[disabled] class="{{ pub.type }}">
+            <button class="{{ pub.type }}">
                         {{ pub.year }}/{%if pub.month < 10 %}0{% endif %}{{ pub.month }}:
                     </button>
             </small>
