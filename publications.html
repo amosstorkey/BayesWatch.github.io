@@ -14,10 +14,10 @@ title: Publications
         <div class='clearfix'>
             <small class='publication-date'>
              {{ pub.year }}/{%if pub.month < 10 %}0{% endif %}{{ pub.month }}: 
+ {{ pub.year }}/{%if pub.month < 10 %}0{% endif %}{{ pub.month }}: 
+
             </small>
-              <small class='publication-date'>
-             {{ pub.year }}/{%if pub.month < 10 %}0{% endif %}{{ pub.month }}: 
-            </small>
+
             <div class='publication-details'>
                 <a class='publication-title'  href="{{ pub.url }}">
                                          <button class="{{ pub.type }}">
