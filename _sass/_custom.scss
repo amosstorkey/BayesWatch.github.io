@@ -25,7 +25,7 @@
     font-style: italic;
 }
 
-.btn {
+.btn,.blargh {
     display: inline-block;
     margin-left: 5px;
     margin-right: 5px;
@@ -41,6 +41,10 @@
     background-image: none;
     border: 1px solid transparent;
     white-space: nowrap;
+}
+
+.blargh {
+  background-color: #000;
 }
 
 .publication-list {
