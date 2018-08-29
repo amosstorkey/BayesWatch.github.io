@@ -6,11 +6,11 @@ title: Publications
 <div>
     <h2>Publications</h2>
     <p>
-    <button class="conference" disabled>conference</button>
-    <button class="workshop" disabled>workshop</button>
-    <button class="preprint" disabled>preprint</button>
-    <button class="journal" disabled>journal</button>
-    <button class="techreport" disabled>tech report</button>
+    <button:disabled class="conference">conference</button>
+    <button class="workshop">workshop</button>
+    <button class="preprint">preprint</button>
+    <button class="journal">journal</button>
+    <button class="techreport">tech report</button>
     </p>
     <ul class='publication-list'>
     {% assign sorted_pubs = site.data.publications | sort: "month" | sort: "year" | reverse %}
