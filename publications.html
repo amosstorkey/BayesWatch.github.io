@@ -19,12 +19,12 @@ title: Publications
                 <a class='publication-title'  href="{{ pub.url }}">
                                          <button class="{{ pub.type }}">
                         {{ pub.type }}
-                    </button>{{ pub.published }} 
+                    </button>
                   {{ pub.title }}
 
                 </a>
                 <p class='publication-published'>
-
+                {{ pub.published }} 
                 </p>
                 <div class='publication-authors'>
                     <small> {{ pub.authors | join: ', ' }} </small>
