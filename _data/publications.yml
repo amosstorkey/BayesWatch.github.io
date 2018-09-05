@@ -199,7 +199,7 @@
     Effective training of neural networks requires much data. In the low-data regime, parameters are underdetermined, and learnt networks generalise poorly. Data Augmentation alleviates this by using existing data more effectively. However standard data augmentation produces only limited plausible alternative data. Given there is potential to generate a much broader set of augmentations, we design and train a generative model to do data augmentation. The model, based on image conditional Generative Adversarial Networks, takes data from a source domain and learns to take any data item and generalise it to generate other within-class data items. As this generative process does not depend on the classes themselves, it can be applied to novel unseen classes of data. We show that a Data Augmentation Generative Adversarial Network (DAGAN) augments standard vanilla classifiers well. We also show a DAGAN can enhance few-shot learning systems such as Matching Networks. We demonstrate these approaches on Omniglot, on EMNIST having learnt the DAGAN on Omniglot, and VGG-Face data. In our experiments we can see over 13% increase in accuracy in the low-data regime experiments in Omniglot (from 69% to 82%), EMNIST (73.9% to 76\) and VGG-Face (4.5% to 12%); in Matching Networks for Omniglot we observe an increase of 0.5% (from 96.9% to 97.4%) and an increase of 1.8% in EMNIST (from 59.5% to 61.3%).
   
 - title: "Moonshine: Distilling with Cheap Convolutions"
-  authors: [Elliot Crowley, Gavin Gray, Amos Storkey]
+  authors: [Elliot J. Crowley, Gavin Gray, Amos Storkey]
   year: 2018
   month: 12
   type: conference
@@ -217,3 +217,7 @@
   url: https://arxiv.org/abs/1309.7311
   abstract: >
     One of the fundamental tasks of science is to find explainable relationships between observed phenomena. One approach to this task that has received attention in recent years is based on probabilistic graphical modelling with sparsity constraints on model structures. In this paper, we describe two new approaches to Bayesian inference of sparse structures of Gaussian graphical models (GGMs). One is based on a simple modification of the cutting-edge block Gibbs sampler for sparse GGMs, which results in significant computational gains in high dimensions. The other method is based on a specific construction of the Hamiltonian Monte Carlo sampler, which results in further significant improvements. We compare our fully Bayesian approaches with the popular regularisation-based graphical LASSO, and demonstrate significant advantages of the Bayesian treatment under the same computing costs. We apply the methods to a broad range of simulated data sets, and a real-life financial data set.
+
+- title: "Characterising Across-Stack Optimisations for Deep Convolutional Neural Networks"
+  authors: [Jack Turner, José Cano, Valentin Radu, Elliot J. Crowley, Michael O'Boyle, Amos Storkey]
+
