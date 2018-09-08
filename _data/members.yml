@@ -12,6 +12,15 @@
   display-name: Dr Massimiliano Patacchiola
   role: research associate
   url: https://mpatacchiola.github.io
+  
+- name: Joseph Mellor
+  display-name: Dr Joseph Mellor
+  role: Research Associate
+  url: https://github.com/mellorjc
+  working-on: 
+  affiliation: IGMM
+  affiliation-url: https://www.ed.ac.uk/igmm
+
 
 - name: Antreas Antoniou
   role: PhD student
@@ -31,14 +40,6 @@
   url: https://jamesowers.github.io/
   working-on: synthesis and feature learning for music
   
-- name: Joseph Mellor
-  display-name: Dr Joseph Mellor
-  role: Research Associate
-  url: https://github.com/mellorjc
-  working-on: 
-  affiliation: IGMM
-  affiliation-url: https://www.ed.ac.uk/igmm
-
 - name: Harri Edwards
   role: PhD student
   url: https://github.com/harri-edwards/
