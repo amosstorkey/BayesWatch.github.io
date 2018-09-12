@@ -240,8 +240,8 @@
 - title: "Large-Scale Study of Curiosity-Driven Learning"
   authors: [Yuri Burda, Harrison Edwards, Deepak Pathak, Amos Storkey, Trevor Darrell, Alexei A. Efros]
   year: 2018
-  month: 12
-  type: conference
+  month: 7
+  type: workshop
   published: Exploration in RL Workshop, ICML
   url: https://arxiv.org/abs/1808.04355
   abstract: >
