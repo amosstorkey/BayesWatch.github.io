@@ -5,13 +5,6 @@ title: Publications
 
 <div>
     <h2>Publications</h2>
-    <p>
-    <button class="conference">conference</button>
-    <button class="workshop">workshop</button>
-    <button class="preprint">preprint</button>
-    <button class="journal">journal</button>
-    <button class="techreport">tech report</button>
-    </p>
     <ul class='publication-list'>
     {% assign sorted_pubs = site.data.publications | sort: "month" | sort: "year" | reverse %}
     {% for pub in  sorted_pubs %}
@@ -19,20 +12,14 @@ title: Publications
         {% if pub.year > 2009 %} 
         <li class='publication'>
         <div class='clearfix'>
-                  <a href="{{ pub.url }}">
-            <button class="{{ pub.type }}">
-                       {{ pub.year }}/{%if pub.month < 10 %}0{% endif %}{{ pub.month }}:
-                    </button>
-                </a>
+            <small class='publication-date'>
+                {{ pub.year }}:
+            </small>
             <div class='publication-details'>
                 <a class='publication-title'  href="{{ pub.url }}">
-
                   {{ pub.title }}
-
                 </a>
-                <p class='publication-published'>
-                {{ pub.published }} 
-                </p>
+                <p class='publication-published'> {{ pub.published }} </p>
                 <div class='publication-authors'>
                     <small> {{ pub.authors | join: ', ' }} </small>
                     <button class="btn" data-toggle="collapse"
