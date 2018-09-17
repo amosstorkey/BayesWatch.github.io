@@ -13,7 +13,7 @@ title: Blog
     </h1>
 
     <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
-  {% assign id = page.author | slugify %}
+  {% assign id = post.author | slugify %}
   <div class='clearfix'>
     <div class='member-photo-card'>
       <img class='member-photo' src='/photos/{{ id }}.jpg' width='50' />
