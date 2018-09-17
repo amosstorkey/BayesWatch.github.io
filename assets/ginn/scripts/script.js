@@ -66,6 +66,17 @@ var incrementValue = 1/mapLength;
 var timeoutValue = 20;
 var playing = false;
 
+var images = [];
+function preload() {
+    for (var i = 0; i < valueMap.length; i++) {
+ 		  iteration = valueMap[i];
+        images[i] = new Image();
+        images[i].src = `${base_fn}/p_${iteration}.png`;
+        
+    }
+}
+preload();
+
 
 function readTextFile(file)
 {
