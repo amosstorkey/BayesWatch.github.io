@@ -8,5 +8,5 @@ Blog posts are coming soon. In the meantime, enjoy this placeholder.
 Testing adding an image...
 
 
-![ReLU](photos/gavin-gray.jpg)
+![ReLU](/photos/gavin-gray.jpg)
 
