@@ -10,3 +10,4 @@ Testing adding an image...
 
 ![ReLU](/photos/gavin-gray.jpg)
 
+![ReLU](/images/gavin-gray.jpg)
