@@ -75,8 +75,8 @@ function preload() {
         
     }
 }
-preload();
 
+preload();
 
 function readTextFile(file)
 {
@@ -668,7 +668,7 @@ window.onkeydown = function(e){
         
         if (playing == true) {
             currentValue = iterationSlider.getValue()[0];
-            console.log(currentValue);
+            //console.log(currentValue);
             playNextSlider();
         } else {
             clearTimeout(timeoutVar);
@@ -678,17 +678,37 @@ window.onkeydown = function(e){
     }
     
     if(e.keyCode == 173){
-        if (timeoutValue < 2000) {timeoutValue += 20;}
+        if (timeoutValue < 2000) {
+            if (timeoutValue < 10) {
+                timeoutValue += 1;
+            } else {
+                timeoutValue += 10;
+            }
+        }
     
     }
     
     if(e.keyCode == 61){
-        if (timeoutValue > 20) {timeoutValue -= 20;}
+        if (timeoutValue > 10) {timeoutValue -= 10;}
+        else if (timeoutValue > 1) {timeoutValue -= 1; }
     
+    }
+    
+    if (e.keyCode == 39) {
+        currentValue = iterationSlider.getValue()[0];
+        if (currentValue < mapLength){
+            iterationSlider.setValue(currentValue+1/mapLength, 0, snap=true);
+        }
+    }
+    
+    if (e.keyCode == 37) {
+        currentValue = iterationSlider.getValue()[0];
+        if (currentValue > 0){
+            iterationSlider.setValue(currentValue-1/mapLength, 0, snap=true);
+        }
     }
     
     //console.log(e.keyCode, timeoutValue);
 }
-
 
 
